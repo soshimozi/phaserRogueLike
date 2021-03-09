@@ -1,0 +1,16 @@
+<div class="info-panel">
+    <div class="table-row">
+        <div class="scroll-top table-cell"></div>
+        <div class="scroll-body table-cell">
+            <div class="info">
+                <div class="info-header">{{header}}</div>
+                <div *ngFor="let info of infos; index as i;" class="table-row">
+                    <div class="table-cell">
+                        <label>{{info.label}}:</label>
+                    </div>
+                    <div class="table-cell">{{info.val}}</div></div>                
+            </div>
+        </div>
+        <div class="scroll-end table-cell"></div>
+    </div>
+</div>

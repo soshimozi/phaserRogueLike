@@ -1,0 +1,35 @@
+<div class="info-panel">
+    <div class="table-row">
+        <div class="scroll-top table-cell"></div>
+        <div class="scroll-body table-cell">
+            <div class="info">
+                <div class="info-header">Player</div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <label>Dungeon:</label>
+                    </div>
+                    <div class="table-cell">{{dungeonLevel}}</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <label>XP Level:</label>
+                    </div>
+                    <div class="table-cell">{{playerLevel}}</div>                
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <label>Health:</label>
+                    </div>
+                    <div class="table-cell">{{this.playerHp < 0 ? 0 : this.playerHp}}</div>                
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <label>Weapon:</label>
+                    </div>
+                    <div class="table-cell">{{this.playerWeaponName + ' (' + this.playerWeaponDamageRoll + ')'}}</div>
+                </div>                
+            </div>
+        </div>
+        <div class="scroll-end table-cell"></div>
+    </div>
+</div>

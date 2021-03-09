@@ -1,0 +1,19 @@
+<div>
+    <div class="table-row">
+        <div class="table-cell info-panels">
+            <app-list-panel header="Instructions" [list]="instructions"></app-list-panel>
+            <app-legend></app-legend>
+        </div>
+        <div class="table-cell map">
+
+            <div id="gameContainer"></div>
+
+        </div>
+        <div class="table-cell info-panels">
+            <app-user-info [playerLevel]="dungeon.player.level" [playerHp]="dungeon.player.hp" [playerWeaponName]="dungeon.player.weapon.name" [playerWeaponDamageRoll]="dungeon.player.weapon.damageRoll" [dungeonLevel]="dungeon.level"></app-user-info>
+            <app-opponent-info [hp]="dungeon.currentOpponentHp" [damageTaken]="dungeon.player.damageTaken" [weapon]="dungeon.player.weapon"></app-opponent-info>
+        </div>
+    </div>
+</div>
+
+
